@@ -1,1 +1,1 @@
-web: gunicorn inventory_project.wsgi:application -c gunicorn.conf.py
+web: gunicorn service_project.wsgi:application -c gunicorn.conf.py
