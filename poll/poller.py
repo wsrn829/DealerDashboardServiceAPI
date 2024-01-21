@@ -14,7 +14,7 @@ from service_rest.models import AutomobileVO
 
 
 def get_automobile():
-    response = requests.get("http://inventory-api:8000/api/automobiles/")
+    response = requests.get("https://dealer-dashboard-8d7b3aea3ae7.herokuapp.com/automobiles/")
     content = json.loads(response.content)
     for auto in content["autos"]:
         AutomobileVO.objects.update_or_create(
