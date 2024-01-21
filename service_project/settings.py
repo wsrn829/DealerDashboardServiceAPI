@@ -71,18 +71,24 @@ ALLOWED_HOSTS = [
     "inventory-api",
     "project-beta-inventory-api-1",
     "inventory-api",
+    'dealerdashboardserviceapi.herokuapp.com',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://*",
-    "https://*",
     "https://dealerdashboard.netlify.app",
+    "https://dealerdashboardserviceapi.herokuapp.com",
+    "https://dealerdashboardserviceapi-db6bf25312d7.herokuapp.com",
+    "https://dealer-dashboard-8d7b3aea3ae7.herokuapp.com",
+    "http://localhost:3000",
+    "http://localhost:8000",
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://*",
     "https://*",
     "https://dealerdashboard.netlify.app",
+    "https://dealerdashboardserviceapi.herokuapp.com",
+    "http://dealerdashboardserviceapi.herokuapp.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
